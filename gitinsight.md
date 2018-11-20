@@ -14,3 +14,6 @@ The work process: pull, branch, add, commit, push -> review, approval, merge
 
 5. To update our forked repo to keep the same status as the original, we have to use 'git remote originalrepourl' (called upstream) which we'll use to sync with our remote repo with a push.
 
+
+
+Testing inconsistent changes!!
