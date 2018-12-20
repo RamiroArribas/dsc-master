@@ -20,10 +20,10 @@ follow me on: https://github.com/RamiroArribas
 	b. git clone url
 	This command clones a repo previously created on our account. It creates a folder which name will be the name of the repo, and its contents will be all the files and folders contained inside the remote repo. We then do all the changes we want, and when we are ready we'll proceed to the next step.
 
-3.- When modifying the contents of the repo, our prompt will change:   branchnameinredcolor(+n,-n)  That allows us to keep track of all the changes made (comparing to the original state of the repo). When we are satisfied with the changes, we type:
+3.- When modifying the contents of the repo, our prompt will change:   branchnameinredcolor(+n,-n)  That allows us to keep track of all the changes made (compared with the original state of the repo). When we are satisfied with the changes, we type:
 	git add 'nameofthefile'
 
-We can do as many additions as we want before pushing (even changes that we add after commiting). When the changes are added, our prompt will change to:   branchnameinredcolor(+0,-0)
+We can do as many additions as we want before pushing (even changes that we add after committing). When the changes are added, our prompt will change to:   branchnameinredcolor(+0,-0)
 
 4.- The next step is to commit our changes:
 	git commit -m 'Message to send with the commitment'
@@ -35,7 +35,7 @@ This command will also change our prompt, so the number of files modified is sho
 	git push
 
 If we proceeded through 2.b, the prompt will ask for our account details and the changes will be uploaded.
-If we chose the 2.a path, since our repo doesn't exist online, we have to do some extra steps. First, we have to create the repo on the github web (as we would do in the 2.a path). Then, on the terminal, type the following commands:
+If we chose the 2.a path, since our repo doesn't exist online, we have to do some extra steps. First, we have to create the repo on the github web (as we would do in the 2.a path). Then, on the teminal, type the following commands:
 	git remote add origin remote repository URL
 	# Sets the new remote
 	git remote -v
@@ -48,8 +48,9 @@ If we chose the 2.a path, since our repo doesn't exist online, we have to do som
 Our changes will show now on the online repo, along with the commit messages we wrote.
 
 
+
 6.- INCONSISTENCIES(???)
-Sometimes, when we push our commit, the prompt will show an error alerting that the are inconsistencies between the remote and the local repo that the program doesn't know how to solve itself (that's a reason why it's SO important to PULL BEFORE starting a new work session).
+Sometimes, when we push our commit, the prompt will show an error alerting that there are inconsistencies between the remote and the local repo that the program doesn't know how to solve itself (that's a reason why it's SO important to PULL BEFORE starting a new work session).
 
 In order to solve the inconsistencies, if we pull now, the 'corrupted' file will be modified so if we access it (through gedit, for example) we'll see the changes made in local and the ones in remote. We can manually solve the inconsistencies and now push again.
 
@@ -61,7 +62,7 @@ git status	:	is a command that helps us to keep track of the changes made.
 
 git log		:	is a command that let the user check the commitments already made in the repo and the future commitments that have not still been pushed.
 
-git reset --hard commitihash	: use with EXTREME CAUTION. This command let us undo commitments still not pushed. It allows us to move the 'HEAD' but doesn't keep record of the deleted stuff so use it with caution.
+git reset --hard commithash	: use with EXTREME CAUTION. This command let us undo commitments still not pushed. It allows us to move the 'HEAD' but doesn't keep record of the deleted stuff so use it with caution.
 
 
 
