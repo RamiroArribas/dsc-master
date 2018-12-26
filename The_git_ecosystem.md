@@ -1,13 +1,7 @@
 RamiroArribas
 follow me on: https://github.com/RamiroArribas
 
--------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------
-
-	(A)	Sync local with remote, clone your own repo and make changes on it
-
--------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------
+# (A)	Sync local with remote, clone your own repo and make changes on it
 
 1.- The first thing we want to do is configuring our git account and sync with our local ecosystem:
 	git config --global user.name "Username"
@@ -66,13 +60,7 @@ git reset --hard commithash	: use with EXTREME CAUTION. This command let us undo
 
 
 
--------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------
-
-	(B)	Fork repo, create a branch to make out changes, pull request
-
--------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------
+# (B)	Fork repo, create a branch to make out changes, pull request
 
 1.- On the github browser, fork the desired repo and clone it as you would do in the (A) guide.
 
@@ -111,13 +99,7 @@ If we are the ones asked for a pull request, we can check the changes made by th
 
 
  
--------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------
-
-	(C)	Update your forked repo to the status of the original
-
--------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------
+# (C)	Update your forked repo to the status of the original
 
 In order to update a previously forked repo, we don't fork it again. Instead, we update our fork following 2 steps: first download the latest status of the original repo in local and second, update the remote repo pushing the changes
 
