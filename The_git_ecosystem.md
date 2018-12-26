@@ -1,46 +1,54 @@
 RamiroArribas
 follow me on: https://github.com/RamiroArribas
 
-# (A)	Sync local with remote, clone your own repo and make changes on it
+## (A)	Sync local with remote, clone your own repo and make changes on it
 
 1.- The first thing we want to do is configuring our git account and sync with our local ecosystem:
+	
 	git config --global user.name "Username"
 	git config --global user.email user@mail.com
 
-2.- Now we have to 'download' the remote repo in our machine (local). In order to do so, we have two ways to proceed:
-	a. git init projectname
-	What this command does is to create a folder in our machine which name will be the name of the repo. We then move to the created folder and do all the changes we want, and when we are ready we'll proceed to the next step.
 
+2.- Now we have to 'download' the remote repo in our machine (local). In order to do so, we have two ways to proceed:
+	
+	a. git init projectname
+	
+What this command does is to create a folder in our machine which name will be the name of the repo. We then move to the created folder and do all the changes we want, and when we are ready we'll proceed to the next step.
+	
 	b. git clone url
-	This command clones a repo previously created on our account. It creates a folder which name will be the name of the repo, and its contents will be all the files and folders contained inside the remote repo. We then do all the changes we want, and when we are ready we'll proceed to the next step.
+	
+This command clones a repo previously created on our account. It creates a folder which name will be the name of the repo, and its contents will be all the files and folders contained inside the remote repo. We then do all the changes we want, and when we are ready we'll proceed to the next step.
+
 
 3.- When modifying the contents of the repo, our prompt will change:   branchnameinredcolor(+n,-n)  That allows us to keep track of all the changes made (compared with the original state of the repo). When we are satisfied with the changes, we type:
+	
 	git add 'nameofthefile'
 
 We can do as many additions as we want before pushing (even changes that we add after committing). When the changes are added, our prompt will change to:   branchnameinredcolor(+0,-0)
 
+
 4.- The next step is to commit our changes:
+	
 	git commit -m 'Message to send with the commitment'
 
 This command will also change our prompt, so the number of files modified is showed in yellow color:   branchnameinredcolor(+n,-n,#)
 
 
 5.- When all the files and changes are ready in the commitment, we are ready to push:
+	
 	git push
 
 If we proceeded through 2.b, the prompt will ask for our account details and the changes will be uploaded.
 If we chose the 2.a path, since our repo doesn't exist online, we have to do some extra steps. First, we have to create the repo on the github web (as we would do in the 2.a path). Then, on the teminal, type the following commands:
+	
 	git remote add origin remote repository URL
 	# Sets the new remote
 	git remote -v
 	# Verifies the new remote URL
-
 	git push origin master
 	# Pushes the changes in your local repository up to the remote repository you specified as the origin
 
-
 Our changes will show now on the online repo, along with the commit messages we wrote.
-
 
 
 6.- INCONSISTENCIES(???)
@@ -60,15 +68,17 @@ git reset --hard commithash	: use with EXTREME CAUTION. This command let us undo
 
 
 
-# (B)	Fork repo, create a branch to make out changes, pull request
+## (B)	Fork repo, create a branch to make out changes, pull request
 
 1.- On the github browser, fork the desired repo and clone it as you would do in the (A) guide.
 
 
 2.- Create a branch in which you will work on the changes to make and avoid modifying important things of the master branch.
+	
 	git branch nameofthenewbranch
 
 Now we have to move to the new branch to start working:
+	
 	git checkout nameofthenewbranch
 
 
@@ -99,7 +109,7 @@ If we are the ones asked for a pull request, we can check the changes made by th
 
 
  
-# (C)	Update your forked repo to the status of the original
+## (C)	Update your forked repo to the status of the original
 
 In order to update a previously forked repo, we don't fork it again. Instead, we update our fork following 2 steps: first download the latest status of the original repo in local and second, update the remote repo pushing the changes
 
@@ -128,7 +138,7 @@ In the simplest terms, git pull does a git fetch followed by a git merge. The co
 Our master branch is now updated, and we can push the changes to our remote repo.
 
 
-***TIPS***
-----------
+*** TIPS ***
+------------
 
 git remote show 'nameoftheremote'	:	shows us the fetch url and the push url of the current remote	
