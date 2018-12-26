@@ -52,6 +52,7 @@ Our changes will show now on the online repo, along with the commit messages we 
 
 
 6.- INCONSISTENCIES(???)
+
 Sometimes, when we push our commit, the prompt will show an error alerting that there are inconsistencies between the remote and the local repo that the program doesn't know how to solve itself (that's a reason why it's SO important to PULL BEFORE starting a new work session).
 
 In order to solve the inconsistencies, if we pull now, the 'corrupted' file will be modified so if we access it (through gedit, for example) we'll see the changes made in local and the ones in remote. We can manually solve the inconsistencies and now push again.
